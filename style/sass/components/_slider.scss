@@ -1,0 +1,31 @@
+.slider{
+  margin-bottom: 50px;
+  .anc_slider{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    img{
+      max-width: 100%;
+      transition: 15s;
+      &:hover{
+        transform: scale(1.5);
+      }
+    }
+  }
+  @include owl-nav_;
+  .owl-dots{
+    display: none;
+  }
+}
+
+@include xs{
+  .slider{
+    @include dots_;
+    .owl-dots{
+      bottom: 20px;
+    }
+    .owl-nav{
+      display: none;
+    }
+  }
+}

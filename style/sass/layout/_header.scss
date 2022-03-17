@@ -1,0 +1,227 @@
+header{
+  padding: 15px 0;
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.logo{
+  img{
+    width: auto;
+    height: auto;
+  }
+}
+.close_, .bars_{
+  display: none;
+}
+.lang{
+  @include lang_m;
+
+}
+nav{
+  transition: .5s;
+}
+.navbar_{
+  .lang{
+    display: none;
+    @include lang_m;
+    @include en {
+      left: 20px;
+    }
+    @include ar {
+      right: 20px;
+    }
+  }
+  .ul_nav{
+    display: flex;
+    align-items: center;
+    li{
+      &:not(:last-child){
+        .anc_nav{
+          margin-inline-end: 20px;
+        }
+      }
+
+    }
+    .anc_nav{
+      font-size: 18px;
+      font-weight: 400;
+      color: $color_7;
+      text-transform: capitalize;
+      transition: .5s;
+      &:hover{
+        color: $color_3;
+      }
+    }
+  }
+}
+.search_lang{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn_sho-sear{
+    font-size: $font_s + 8;
+    color: $color_7;
+    margin-inline-end: 30px;
+    transition: .5s;
+    &:hover{
+      color: $color_3;
+    }
+  }
+  .shopping_{
+    position: relative;
+    span{
+      font-size: 10px;
+      position: absolute;
+      right: -5px;
+      top: 1px;
+      background-color: $color_3;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      font-weight: 400;
+      color: $color_1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.searsh_parant{
+  text-align: center;
+  display: none;
+
+}
+.search_div{
+  width: 90%;
+  margin: 10px auto 0;
+  position: relative;
+  input{
+    height: 45px;
+    border-radius: 22.5px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #f7f7f7;
+    padding: 0 20px;
+    &:focus{
+      outline: 0;
+      border-color: $color_3;
+    }
+  }
+  .search_click{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 20px;
+    transition: .5s;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $color_3;
+    color: $color_1;
+    @include en {
+      right:5px
+    }
+    @include ar {
+      left:5px
+    }
+    &:hover{
+      background-color: transparent;
+      color: $color_3;
+    }
+  }
+}
+.la-search {
+  transform: rotate(-90deg);
+}
+@include xs{
+  header{
+    padding: 5px 0;
+  }
+  .bars_{
+    display: block;
+  }
+  .lang{
+    display: none;
+  
+  }
+  .close_{
+    display: block;
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    @include ar {
+      left: 20px;
+      }
+    @include en {
+      right: 20px;
+      }
+  }
+  .logo {
+    img{
+      width: 130px;
+    }
+  }
+  .search_div{
+    width: 100%;
+    margin-top: 10px;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    @include en{
+      left: -100%;
+    }
+    @include ar{
+      right: -100%;
+    }
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    transition: .5s;
+    background-color: $color_1;
+    .navbar_{
+      .lang{
+        position: absolute;
+        top: 20px;
+        display: block;
+      }
+      .ul_nav{
+        flex-direction: column;
+        li{
+          &:not(:last-child){
+            .anc_nav{
+              margin-inline-end: 0;
+              margin-bottom: 10px;
+            }
+          } 
+        }
+        .anc_nav{
+          margin: 0;
+        }
+      }
+    }
+
+  }
+  .search_lang{
+    .btn_sho-sear{
+      margin-inline-end: 0px;
+      margin-inline-start: 15px;
+    }
+  }
+
+
+}
+
+.open_{
+@include en {
+left: 0;
+}
+@include ar {
+right: 0;
+}
+}
