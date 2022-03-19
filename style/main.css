@@ -88,8 +88,8 @@ header .header {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 5px 0px #0000001a;
           box-shadow: 0px 0px 5px 0px #0000001a;
-  padding: 10px 0;
-  min-width: 100px;
+  padding: 15px;
+  min-width: 120px;
   border-radius: 8px;
   visibility: hidden;
   opacity: 0;
@@ -176,8 +176,8 @@ nav {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 5px 0px #0000001a;
           box-shadow: 0px 0px 5px 0px #0000001a;
-  padding: 10px 0;
-  min-width: 100px;
+  padding: 15px;
+  min-width: 120px;
   border-radius: 8px;
   visibility: hidden;
   opacity: 0;
@@ -414,6 +414,9 @@ html[dir="rtl"] .search_div .search_click {
             margin-inline-end: 0px;
     -webkit-margin-start: 15px;
             margin-inline-start: 15px;
+  }
+  .navbar_ .lang .drop_lang{
+    min-width: 100px;
   }
 }
 
@@ -1353,5 +1356,6 @@ html[dir="ltr"] .feat_div .feat_title {
   .feat_div > i {
     margin-bottom: 5px;
   }
+  
 }
 /*# sourceMappingURL=main.css.map */
