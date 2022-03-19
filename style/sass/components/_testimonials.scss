@@ -6,7 +6,8 @@
       left: -70px;
     }
     button.owl-prev{
-      right: -70px
+      right: -70px;
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
   .owl-dots{
@@ -15,7 +16,7 @@
   .title_m{
     @include title_main;
     margin-bottom: 40px;
-    font-size: $font_s * 2 - 2;
+    font-size: 24px;
   }
 }
 .div_item{
@@ -36,13 +37,13 @@
     }
   }
   .testi_t{
-    font-size: $font_s;
+    font-size: $font_s - 2;
     color: $color_5;
     font-weight: 700;
     margin-bottom: 10px;
   }
   .testi_p{
-    font-size: $font_s + 1;
+    font-size: $font_s - 2;
     z-index: 11;
     color: $color_7;
     font-weight: 300;
