@@ -415,9 +415,6 @@ html[dir="rtl"] .search_div .search_click {
     -webkit-margin-start: 15px;
             margin-inline-start: 15px;
   }
-  .navbar_ .lang .drop_lang{
-    min-width: 100px;
-  }
 }
 
 html[dir="ltr"] .open_ {
@@ -1163,6 +1160,7 @@ body {
 
 .testimonials .owl-nav button.owl-next {
   left: -70px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .testimonials .owl-nav button.owl-prev {
@@ -1356,6 +1354,5 @@ html[dir="ltr"] .feat_div .feat_title {
   .feat_div > i {
     margin-bottom: 5px;
   }
-  
 }
 /*# sourceMappingURL=main.css.map */
