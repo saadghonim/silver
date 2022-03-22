@@ -1,7 +1,11 @@
 .store{
-  padding-top: 70px;
-  margin-bottom: 80px;
   text-align: center;
+
+  }
+  .title_parant_{
+    padding-top: 70px;
+
+  }
   .title_div{
     .title_m{
       @include title_main;
@@ -27,6 +31,9 @@
     margin: 0 auto 70px;
     width: 82%;
   }
+  .banner_parant_{
+  margin-bottom: 80px;
+
   }
 .anc_banner{
   overflow: hidden;

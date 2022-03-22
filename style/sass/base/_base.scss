@@ -50,12 +50,12 @@ body {
   }
   
   ::-webkit-scrollbar {
-    width: 10px;
-    height: 100px;
+    width: 5px;
+    height: 0px;
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    // background: $color_2; 
+    background: $color_3; 
 
   }
   
