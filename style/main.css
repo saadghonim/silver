@@ -28,7 +28,8 @@ header .header {
   position: relative;
 }
 
-.lang .div_lang, .lang .drop_lang .anc_lang, .navbar_ .lang .drop_lang .anc_lang {
+.lang .div_lang, .lang .drop_lang .anc_lang, 
+.navbar_ .lang .drop_lang .anc_lang {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,8 +79,16 @@ header .header {
   -webkit-margin-start: 2px;
           margin-inline-start: 2px;
 }
-
-.lang .drop_lang {
+.div_user{
+  cursor: pointer;
+  position: relative;
+}
+.div_user:hover .drop_user{
+  opacity: 1;
+  visibility: visible;
+  z-index: 11;
+}
+.lang .drop_lang, .user .drop_user{
   position: absolute;
   top: 25px;
   -webkit-transform: translateX(-50%);
@@ -97,7 +106,9 @@ header .header {
   -webkit-transition: .5s;
   transition: .5s;
 }
-
+.user .drop_user{
+  top: 33px;
+}
 .lang .drop_lang li:first-child {
   margin-bottom: 5px;
 }
@@ -116,7 +127,8 @@ nav {
   position: relative;
 }
 
-.navbar_ .lang .div_lang, .navbar_ .lang .drop_lang .anc_lang {
+.navbar_ .lang .div_lang,
+.navbar_ .lang .drop_lang .anc_lang ,.div_user .anc_user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +148,7 @@ nav {
   cursor: pointer;
 }
 
-.navbar_ .lang .div_lang:hover, .navbar_ .lang .drop_lang .anc_lang:hover {
+.navbar_ .lang .div_lang:hover, .navbar_ .lang .drop_lang .anc_lang:hover, .div_user .anc_user:hover {
   color: #c79b2d;
 }
 
@@ -186,7 +198,7 @@ nav {
   transition: .5s;
 }
 
-.navbar_ .lang .drop_lang li:first-child {
+.navbar_ .lang .drop_lang li:first-child, .div_user .drop_user li:first-child {
   margin-bottom: 5px;
 }
 
@@ -414,6 +426,9 @@ html[dir="rtl"] .search_div .search_click {
             margin-inline-end: 0px;
     -webkit-margin-start: 15px;
             margin-inline-start: 15px;
+  }
+  .user .drop_user{
+    top: 35px;
   }
 }
 
